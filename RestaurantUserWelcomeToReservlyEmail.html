@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <style>
+        /* Column Drop Layout Pattern CSS */
+        @media only screen and (max-width: 450px) {
+            td[class="column"] {
+                display: block;
+                width: 100%;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+    <table cellpadding="0" cellspacing="0" style=" font-family: arial,sans-serif; font-size: 16px;">
+        <tr>
+            <td class="column border-right" width="400" align="left" valign="top" style="padding: 20px 20px 0px 20px; background: #FFFFFF; ">
+                <a href="http://www.reservly.com"><img width="350" src="https://hostmeprod.blob.core.windows.net/content/hostme_email_logo.png"></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="column" width="600" colspan="3" align="left" valign="top" style="padding: 10px 20px 20px 20px; background: #FFFFFF;  color: #000000;">
+                <p>Hello {{CustomerName}}!</p>
+                <p>Welcome to the <a href="http://www.reservly.com">Reservly</a> app - your free restaurant digital marketing tool!</p>
+                <p>
+                    Reservly makes it easy for restaurants to fill their hottest tables in less time—using only a mobile phone:
+                </p>
+
+                <ul style="list-style:decimal;">
+                    <li>Snap a photo of a table using mobile phone you provided in the form</li>
+                    <li>
+                        Send the photo to {{ReservlyPhone}} as MMS text or to <a href="mailto:{{ReservlyEmail}}">{{ReservlyEmail}}</a> as email with subject or body like:
+                        <ul style="list-style:none;">
+                            <li><kbd style="background-color:aqua">table for 2 on Monday at 7pm #romantic #oceanview</kbd> or</li>
+                            <li><kbd style="background-color:aqua">table #55 for two Monday 7pm #oceanview</kbd> or</li>
+                            <li><kbd style="background-color:aqua">table for 6 today 7pm #romantic #oceanview</kbd> or</li>
+                            <li><kbd style="background-color:aqua">table for 2 tomrrow at 7pm #romantic</kbd></li>
+                        </ul>
+                    </li>
+
+                    <li>We transform that photo into a reservation opportunity… 
+                        <p>
+                            which is then shared with millions of potential guests on social media via <a href="http://www.reservly.com/#network">Reservly’s Reservation Display Network</a>. One photo, millions of views—which means more buzz, more reservations, and a consistently full dining room.
+                        </p>
+                    </li>
+                    <li>When someone makes a reservation you will receive a confirmation with guest's details by email. 
+                        <p>You can navigate to <a href="{{PanelUrl}}">this link</a> to manage reservations online and communicate with guests.
+                        </p>
+                    </li>
+                    </ul>
+                   
+                    <p>We are always happy to hear from you - let us know if you have any questions or suggestions.</p>
+</td>
+        </tr>
+        <tr>
+            <td class="column" width="600" colspan="3" align="left" valign="top" style="padding: 10px 20px 20px 20px; background: #FFFFFF; ">
+                <p style="color: #FE6600; font-weight: 300;">
+                    _____________________________
+                </p>
+                <p>
+                    Sincerely,<br>
+                    <span style="color: #FE6600;">
+                        <strong>The Hostme team!</strong><br>
+                        contact@hostmeapp.com
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td class="column" width="300" align="left" valign="top" style="padding: 10px; background: #FE6600;  font-size: 12px; line-height: 18px; color: #FFFFFF;">
+                <em>Copyright © 2016 Hostme, All rights reserved.</em>
+            </td>
+            <td class="column" width="5" align="center" valign="middle" style="padding: 10px; background: #FE6600;  font-size: 12px; line-height: 18px; color: #FFFFFF;">
+                |
+            </td>
+            <td class="column" width="300" align="left" valign="top" style="padding: 10px; background: #FE6600; color: #FFFFFF;  font-size: 12px; line-height: 18px;">
+                Our mailing address is: contact@hostmeapp.com
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
